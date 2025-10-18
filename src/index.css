@@ -22,4 +22,9 @@
 }
 nav a.active {
   color: #d72050;
+  background-color: #fff;
+}
+a.active {
+  color: #fff;
+  background-color: #d72050;
 }

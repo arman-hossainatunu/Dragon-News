@@ -16,7 +16,7 @@ const MainLayout = () => {
       <section>
         <Navbar></Navbar>
       </section>
-      <div className="max-w-11/12 mx-auto grid grid-cols-12 *:border">
+      <div className="max-w-11/12 mx-auto grid grid-cols-12 mt-5 gap-3">
         <div className="grid col-span-3">
           <LeftAside></LeftAside>
         </div>
