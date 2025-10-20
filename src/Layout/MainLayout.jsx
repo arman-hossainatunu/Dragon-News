@@ -9,7 +9,9 @@ import { Outlet } from "react-router";
 const MainLayout = () => {
   return (
     <div>
-      <Header></Header>
+     <section>
+       <Header></Header>
+     </section>
       <section>
         <LatesNews></LatesNews>
       </section>
@@ -17,13 +19,13 @@ const MainLayout = () => {
         <Navbar></Navbar>
       </section>
       <div className="max-w-11/12 mx-auto grid grid-cols-12 mt-5 gap-3">
-        <div className="grid col-span-3">
+        <div className="grid col-span-3 sticky top-0 h-fit">
           <LeftAside></LeftAside>
         </div>
         <div className="grid col-span-6">
           <Outlet></Outlet>
         </div>
-        <div className="grid col-span-3">
+        <div className="grid col-span-3 sticky top-0 h-fit">
           <RightAside></RightAside>
         </div>
       </div>
